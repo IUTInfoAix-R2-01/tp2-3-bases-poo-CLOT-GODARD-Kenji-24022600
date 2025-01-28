@@ -17,10 +17,26 @@ public class Circle {
     }
     
     public double getRadius() {
-        return radius;
+        return this.radius;
+    }
+    
+    public void setRadius(double radius) {
+        this.radius = radius;
     }
     
     public double getArea() {
-        return radius*radius*Math.PI;
+        return this.radius*this.radius*Math.PI;
+    }
+    
+    public String getColor() {
+        return this.color;
+    }
+    
+    public void setColor(String color) {
+        this.color = color;
+    }
+    
+    public String toString() {
+        return "[Color : " + this.color + ", Radius : " + this.radius + "]";
     }
 }
